@@ -2,7 +2,6 @@ import sys
 from tkinter import *
 from tkinter import filedialog
 
-
 def mHello():
     mText=ment.get()
     mlabel1 = Label(myApp,text=mText).pack()
@@ -53,13 +52,10 @@ filemenu.add_command(label="Close", command=mQuit)
 
 menubar.add_cascade(label="File",menu=filemenu)
 
-
 helpmenu = Menu(menubar, tearoff=0)
 helpmenu.add_command(label="Help docs")
 helpmenu.add_command(label="About",command=mAbout)
 menubar.add_cascade(label="Help",menu=helpmenu)
-
-
 
 #add menubar to the window
 myApp.config(menu=menubar)
